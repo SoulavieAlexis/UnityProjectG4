@@ -21,7 +21,7 @@ public class AutofireScript : MonoBehaviour
       // Auto-fire
       if (weapon != null && weapon.CanAttack)
       {
-        weapon.Attack(true);
+        weapon.Attack(false);
       }
     }
   }
