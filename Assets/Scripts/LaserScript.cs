@@ -7,7 +7,11 @@ public class LaserScript : MonoBehaviour{
     public LineRenderer monLinerRender;
     public float tailleLaser;
 
+    //On recupere les variables du script 
     public PickUpObjectScript pickUpObject;
+
+    //Temps du pouvoir
+    public int powerTime;
 
     // Start is called before the first frame update
     void Start(){
@@ -18,9 +22,10 @@ public class LaserScript : MonoBehaviour{
 
     void Update(){
         RaycastHit2D rayonLaser = Physics2D.Raycast(transform.position, transform.up, tailleLaser);
-        if(Input.GetButton("Fire1") && pickUpObject.isPick == true){
+    
+        if(Input.GetButton("Fire1") && pickUpObject.isPick == true && powerTime > 0){
+            powerTime -= 1;
             monLinerRender.enabled = true;
-
             if(rayonLaser == true){
                 monLinerRender.SetPosition(0, transform.position);
                 monLinerRender.SetPosition(1, new Vector3(transform.position.x, transform.position.y + tailleLaser, transform.position.z));
