@@ -7,8 +7,7 @@ public class LaserScript : MonoBehaviour{
     public LineRenderer monLinerRender;
     public float tailleLaser;
 
-    // Variable collision item
-    public bool isPick = false;
+    public PickUpObjectScript pickUpObject;
 
     // Start is called before the first frame update
     void Start(){
@@ -16,11 +15,10 @@ public class LaserScript : MonoBehaviour{
         monLinerRender.enabled = false;
     }
     // Update is called once per frame
+
     void Update(){
         RaycastHit2D rayonLaser = Physics2D.Raycast(transform.position, transform.up, tailleLaser);
-
-        if(Input.GetButton("Fire1")){
-
+        if(Input.GetButton("Fire1") && pickUpObject.isPick == true){
             monLinerRender.enabled = true;
 
             if(rayonLaser == true){

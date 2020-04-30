@@ -14,14 +14,11 @@ public class PlayerScript : MonoBehaviour
     private Vector2 movement;
     Rigidbody2D rigidbodyComponent;
 
-    public bool isPick = false;
-
     void start(){
         rigidbodyComponent = GetComponent<Rigidbody2D>();
     }
 
-    void Update()
-    {
+    void Update(){
         // 3 - Retrieve axis information
         float inputX = Input.GetAxis("Horizontal");
         float inputY = Input.GetAxis("Vertical");
@@ -30,8 +27,6 @@ public class PlayerScript : MonoBehaviour
         movement = new Vector2(
           speed.x * inputX,
           speed.y * inputY);
-
-
     }
 
     void FixedUpdate()
