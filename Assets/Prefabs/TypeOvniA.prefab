@@ -63,7 +63,7 @@ GameObject:
   - component: {fileID: 1135923302349053171}
   m_Layer: 0
   m_Name: TypeOvniA
-  m_TagString: Untagged
+  m_TagString: Ennemi
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -192,7 +192,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f3ab2ba7ee12204449b0d011f795316e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hp: 10
+  hp: 50
   isEnemy: 1
 --- !u!114 &1644155064579703237
 MonoBehaviour:

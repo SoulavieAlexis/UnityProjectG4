@@ -15,7 +15,7 @@ public class HealthScript : MonoBehaviour
     /// <summary>
     /// Ennemi ou joueur ?
     /// </summary>
-    public bool isEnemy = true;
+    public bool isEnemy;
 
     void OnTriggerEnter2D(Collider2D collider)
     {

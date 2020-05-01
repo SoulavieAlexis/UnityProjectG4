@@ -10,13 +10,17 @@ public class LaserScript : MonoBehaviour{
     //On recupere les variables du script 
     public PickUpObjectScript pickUpObject;
 
+    //On récupère la vie d'un ennemi
+    public HealthScript health;
+
     //Temps du pouvoir
-    public int powerTime;
+    private int powerTime;
 
     // Start is called before the first frame update
     void Start(){
         monLinerRender = GetComponent<LineRenderer>();
         monLinerRender.enabled = false;
+        powerTime = 150;
     }
     // Update is called once per frame
 
@@ -28,12 +32,19 @@ public class LaserScript : MonoBehaviour{
             monLinerRender.enabled = true;
             if(rayonLaser == true){
                 monLinerRender.SetPosition(0, transform.position);
-                monLinerRender.SetPosition(1, new Vector3(transform.position.x, transform.position.y + tailleLaser, transform.position.z));
+                monLinerRender.SetPosition(1, rayonLaser.point);
+
+                if(rayonLaser.collider.tag == "Ennemi"){
+                    health.hp -= 1;
+                    if(health.hp <= 0){
+                        Destroy(health.gameObject);
+                    }
+                }
             }else{
                 Vector3 finLaser = new Vector3(transform.position.x, transform.position.y + tailleLaser, 0);
 
                 monLinerRender.SetPosition(0, transform.position);
-                monLinerRender.SetPosition(0, finLaser);
+                monLinerRender.SetPosition(1, finLaser);
             }
         }else{
             monLinerRender.enabled = false;
