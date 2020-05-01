@@ -15,7 +15,7 @@ public class MoveScript : MonoBehaviour
     /// <summary>
     /// Moving direction
     /// </summary>
-    public Vector2 direction = new Vector2(0, 1);
+    public Vector2 direction = new Vector2(1, 1);
 
     private Vector2 movement;
     private Rigidbody2D rigidbodyComponent;
