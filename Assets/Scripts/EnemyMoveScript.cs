@@ -39,7 +39,6 @@ public class EnemyMoveScript : MonoBehaviour
             movement = new Vector2(
               speed.x * direction.x,
               speed.y * direction.y);
-            Debug.Log(movement);
         }
         else
         {
