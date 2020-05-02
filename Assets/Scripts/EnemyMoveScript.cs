@@ -5,7 +5,7 @@ using System.Collections.Generic;
 /// <summary>
 /// Simply moves the current game object
 /// </summary>
-public class MoveScript : MonoBehaviour
+public class EnemyMoveScript : MonoBehaviour
 {
     // 1 - Designer variables
 
@@ -30,11 +30,14 @@ public class MoveScript : MonoBehaviour
     {
         starShipPositionX = this.transform.position.x;
         
-        if (starShipPositionX <= 9 || starShipPositionX >= 10)
+        if (starShipPositionX <= 5 || starShipPositionX >= 15)
         {
             // 2 - Movement
+
+            direction.x = -direction.x;
+
             movement = new Vector2(
-              -speed.x * direction.x,
+              speed.x * direction.x,
               speed.y * direction.y);
             Debug.Log(movement);
         }
@@ -45,7 +48,7 @@ public class MoveScript : MonoBehaviour
               speed.x * direction.x,
               speed.y * direction.y);
         }
-        
+
     }
 
     void FixedUpdate()

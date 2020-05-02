@@ -23,11 +23,11 @@ public class WeaponScript : MonoBehaviour
   // 2 - Cooldown
   //--------------------------------
 
-  private float shootCooldown;
+  public float shootCooldown = 0f;
 
   void Start()
   {
-    shootCooldown = 0f;
+    
   }
 
   void Update()
