@@ -37,4 +37,5 @@ public class PlayerScript : MonoBehaviour
         // 6 - Move the game object
         rigidbodyComponent.velocity = movement;
     }
+    
 }

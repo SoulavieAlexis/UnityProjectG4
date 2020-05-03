@@ -58,3 +58,6 @@ TagManager:
   - name: Item
     uniqueID: 3120028683
     locked: 0
+  - name: Plateforms
+    uniqueID: 4267207901
+    locked: 0
