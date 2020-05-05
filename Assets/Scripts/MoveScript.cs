@@ -36,7 +36,6 @@ public class MoveScript : MonoBehaviour
             movement = new Vector2(
               -speed.x * direction.x,
               speed.y * direction.y);
-            Debug.Log(movement);
         }
         else
         {

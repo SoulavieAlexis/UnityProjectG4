@@ -25,9 +25,11 @@ public class WeaponScript : MonoBehaviour
 
   public float shootCooldown = 0f;
 
+
+
   void Start()
   {
-    
+  
   }
 
   void Update()
@@ -36,6 +38,8 @@ public class WeaponScript : MonoBehaviour
     {
       shootCooldown -= Time.deltaTime;
     }
+
+
   }
 
   //--------------------------------

@@ -46,6 +46,7 @@ MonoBehaviour:
   shotPrefab: {fileID: 3493014640229476869, guid: 2a6511babababe444a685e5b5c262e07,
     type: 3}
   shootingRate: 0.1
+  shootCooldown: 0
 --- !u!1 &790757419
 GameObject:
   m_ObjectHideFlags: 0
@@ -59,7 +60,7 @@ GameObject:
   - component: {fileID: 790757422}
   m_Layer: 0
   m_Name: Laser
-  m_TagString: Untagged
+  m_TagString: Laser
   m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -72,7 +73,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 790757419}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 7.41, z: 0.04991047}
+  m_LocalPosition: {x: 0, y: 7.7, z: 0.04991047}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 8906864846522095031}
@@ -93,7 +94,6 @@ MonoBehaviour:
   monLinerRender: {fileID: 790757422}
   tailleLaser: 20
   pickUpObject: {fileID: 0}
-  health: {fileID: 0}
 --- !u!120 &790757422
 LineRenderer:
   m_ObjectHideFlags: 0
@@ -237,6 +237,7 @@ MonoBehaviour:
   shotPrefab: {fileID: 3493014640229476869, guid: 2a6511babababe444a685e5b5c262e07,
     type: 3}
   shootingRate: 0.1
+  shootCooldown: 0
 --- !u!1 &8906864846522095024
 GameObject:
   m_ObjectHideFlags: 0
@@ -251,7 +252,7 @@ GameObject:
   - component: {fileID: 50168819534651114}
   - component: {fileID: 994424096}
   - component: {fileID: 927771151}
-  - component: {fileID: 2001545594}
+  - component: {fileID: 1230027386}
   m_Layer: 0
   m_Name: player
   m_TagString: Player
@@ -398,7 +399,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7a56138f4d88824191a7501e4a54f12, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &2001545594
+--- !u!114 &1230027386
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -407,8 +408,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 8906864846522095024}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f3ab2ba7ee12204449b0d011f795316e, type: 3}
+  m_Script: {fileID: 11500000, guid: ba646aaac1631a046b0055bb04c20b50, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hp: 1
+  maxHealth: 100
+  currentHealth: 0
   isEnemy: 0
+  healthBar: {fileID: 0}

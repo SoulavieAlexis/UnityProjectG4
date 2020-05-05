@@ -10,9 +10,6 @@ public class LaserScript : MonoBehaviour{
     //On recupere les variables du script 
     public PickUpObjectScript pickUpObject;
 
-    //On récupère la vie d'un ennemi
-    public HealthScript health;
-
     //Temps du pouvoir
     private int powerTime;
 
@@ -35,10 +32,8 @@ public class LaserScript : MonoBehaviour{
                 monLinerRender.SetPosition(1, rayonLaser.point);
 
                 if(rayonLaser.collider.tag == "Ennemi"){
-                    health.hp -= 1;
-                    if(health.hp <= 0){
-                        Destroy(health.gameObject);
-                    }
+                    //On récupère la fonction d'healhscript
+                    rayonLaser.collider.GetComponent<HealthScript>().damageLaser(1);
                 }
             }else{
                 Vector3 finLaser = new Vector3(transform.position.x, transform.position.y + tailleLaser, 0);
