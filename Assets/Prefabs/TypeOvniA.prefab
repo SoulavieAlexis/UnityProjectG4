@@ -38,7 +38,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1160372836938604334}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b7d0e91a0dbc4444e941d8b3e392be1e, type: 3}
   m_Name: 
@@ -62,6 +62,7 @@ GameObject:
   - component: {fileID: 5766167263108190037}
   - component: {fileID: 1644155064579703237}
   - component: {fileID: 1135923302349053171}
+  - component: {fileID: 8650531074781976461}
   m_Layer: 0
   m_Name: TypeOvniA
   m_TagString: Ennemi
@@ -193,7 +194,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f3ab2ba7ee12204449b0d011f795316e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hp: 50
+  hp: 1
   isEnemy: 1
 --- !u!114 &1644155064579703237
 MonoBehaviour:
@@ -221,3 +222,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: {x: 10, y: 0}
   direction: {x: 0, y: 0}
+--- !u!114 &8650531074781976461
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3739883264133608992}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d2c4f2bc7896864cac385f8ef32729c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
