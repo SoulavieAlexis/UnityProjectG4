@@ -1,10 +1,25 @@
 ﻿using UnityEngine;
 
 public class PickUpObjectScript : MonoBehaviour{
-    public bool isPick = false;
+    //Type d'objet
+    public bool isLaser;
+    public bool isLife;
+
+    private void Start()
+    {
+        isLaser = false;
+        isLife = false;
+    }
     private void OnTriggerEnter2D(Collider2D collision){
         if(collision.CompareTag("Player")){
-            isPick = true;
+            if (gameObject.CompareTag("laserItem"))
+            {
+                isLaser = true;
+            }
+            else if(gameObject.CompareTag("lifeItem"))
+            {
+                isLife = true;
+            }
             Destroy(gameObject);
         }
     }

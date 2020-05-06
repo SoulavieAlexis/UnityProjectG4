@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 4349147948143051028}
   m_Layer: 0
   m_Name: laserItem
-  m_TagString: Item
+  m_TagString: laserItem
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -131,4 +131,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5255781a2bb23364fb4ddcfd327d3ca2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isPick: 0
+  isLaser: 0
+  isLife: 0

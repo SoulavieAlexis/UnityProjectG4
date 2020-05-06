@@ -9,6 +9,7 @@ public class HealthPlayerScript : MonoBehaviour
     public int currentHealth;
 
     public bool isEnemy;
+    public bool powerLaser;
 
     //On récupère la barre de vie
     public HealthBarScript healthBar;
@@ -17,6 +18,7 @@ public class HealthPlayerScript : MonoBehaviour
     {
         currentHealth = maxHealth;
         healthBar.setMaxHealth(maxHealth);
+        powerLaser = false;
     }
 
     // Update is called once per frame
@@ -58,10 +60,15 @@ public class HealthPlayerScript : MonoBehaviour
                 Destroy(gameObject);
             }
         }
-        //Si le joueur prend lifeItem
-        if(pickUpObject != null && pickUpObject.isPick == true)
+        //Si le joueur prend lifeItem, il récupère de la vie
+        if(pickUpObject != null && pickUpObject.isLife == true )
         {
             healPlayer(50);
+        }
+
+        if (pickUpObject != null && pickUpObject.isLaser == true)
+        {
+            powerLaser = true;
         }
     }
     void TakeDamage(int damage)
@@ -75,6 +82,11 @@ public class HealthPlayerScript : MonoBehaviour
     void healPlayer(int health)
     {
         currentHealth += health;
+        if (currentHealth > maxHealth)
+        {
+            currentHealth = 100;
+        }
         healthBar.SetHealth(currentHealth);
+
     }
 }
