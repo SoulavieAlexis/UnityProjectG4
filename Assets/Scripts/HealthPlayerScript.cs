@@ -10,6 +10,7 @@ public class HealthPlayerScript : MonoBehaviour
 
     public bool isEnemy;
 
+    //On récupère la barre de vie
     public HealthBarScript healthBar;
 
     void Start()
@@ -25,6 +26,7 @@ public class HealthPlayerScript : MonoBehaviour
         ShotScript shot = collider.gameObject.GetComponent<ShotScript>();
         PlayerScript player = collider.gameObject.GetComponent<PlayerScript>();
         EnemyScript enemy = collider.gameObject.GetComponent<EnemyScript>();
+        PickUpObjectScript pickUpObject = collider.gameObject.GetComponent<PickUpObjectScript>();
         if (shot != null)
         {
             // Tir allié
@@ -45,12 +47,6 @@ public class HealthPlayerScript : MonoBehaviour
                 }
             }
         }
-        // Si Le joueur touche un ennemi, cet ennemi est détruit
-        if (player != null)
-        {
-            Destroy(gameObject);
-        }
-
         // Si le joueur touche un ennemi il perd 2 hp
         if (enemy != null && this.isEnemy == false)
         {
@@ -62,11 +58,23 @@ public class HealthPlayerScript : MonoBehaviour
                 Destroy(gameObject);
             }
         }
+        //Si le joueur prend lifeItem
+        if(pickUpObject != null && pickUpObject.isPick == true)
+        {
+            healPlayer(50);
+        }
     }
-        void TakeDamage(int damage)
+    void TakeDamage(int damage)
     {
         currentHealth -= damage;
         healthBar.SetHealth(currentHealth);
         
+    }
+
+    //Le player récupère de la vie
+    void healPlayer(int health)
+    {
+        currentHealth += health;
+        healthBar.SetHealth(currentHealth);
     }
 }
