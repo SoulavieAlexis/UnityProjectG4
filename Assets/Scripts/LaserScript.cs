@@ -27,7 +27,6 @@ public class LaserScript : MonoBehaviour{
         }
         if(Input.GetButton("Fire1") && powerTime > 0){
             powerTime -= 1;
-            print(powerTime);
             monLinerRender.enabled = true;
             if(rayonLaser == true){
                 monLinerRender.SetPosition(0, transform.position);
