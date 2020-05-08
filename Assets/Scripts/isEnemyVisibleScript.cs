@@ -17,13 +17,16 @@ public class isEnemyVisibleScript : MonoBehaviour
     {
         if (m_Renderer.isVisible)
         {
+<<<<<<< HEAD
             GetComponent<HealthScript>().isEnemy = true;
             Debug.Log(GetComponent<HealthScript>().isEnemy);
+=======
+            GetComponent<HealthScript>().isEnemy = true; 
+>>>>>>> parent of 928b395... limité à la zone de la caméra
         }
         else
         {
             GetComponent<HealthScript>().isEnemy = false;
-            Debug.Log(GetComponent<HealthScript>().isEnemy);
         }
         
         
