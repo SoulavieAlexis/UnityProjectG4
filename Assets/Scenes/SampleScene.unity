@@ -1768,6 +1768,80 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 586714630}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1642989197
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1591420381058666242, guid: fb1f7554a89754342885d7cf9bdee6b4,
+        type: 3}
+      propertyPath: m_Name
+      value: Score
+      objectReference: {fileID: 0}
+    - target: {fileID: 1591420381058666243, guid: fb1f7554a89754342885d7cf9bdee6b4,
+        type: 3}
+      propertyPath: pointsCountText
+      value: 
+      objectReference: {fileID: 1798303190}
+    - target: {fileID: 1591420381058666268, guid: fb1f7554a89754342885d7cf9bdee6b4,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -4.4127016
+      objectReference: {fileID: 0}
+    - target: {fileID: 1591420381058666268, guid: fb1f7554a89754342885d7cf9bdee6b4,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -122.177826
+      objectReference: {fileID: 0}
+    - target: {fileID: 1591420381058666268, guid: fb1f7554a89754342885d7cf9bdee6b4,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -67.8506
+      objectReference: {fileID: 0}
+    - target: {fileID: 1591420381058666268, guid: fb1f7554a89754342885d7cf9bdee6b4,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1591420381058666268, guid: fb1f7554a89754342885d7cf9bdee6b4,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1591420381058666268, guid: fb1f7554a89754342885d7cf9bdee6b4,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1591420381058666268, guid: fb1f7554a89754342885d7cf9bdee6b4,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1591420381058666268, guid: fb1f7554a89754342885d7cf9bdee6b4,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1591420381058666268, guid: fb1f7554a89754342885d7cf9bdee6b4,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1591420381058666268, guid: fb1f7554a89754342885d7cf9bdee6b4,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1591420381058666268, guid: fb1f7554a89754342885d7cf9bdee6b4,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: fb1f7554a89754342885d7cf9bdee6b4, type: 3}
 --- !u!1001 &1678348605
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1948,6 +2022,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 05239de7459f4724483a8b51d51ff761, type: 3}
+--- !u!114 &1798303190 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1798303190, guid: 3793263e5596cf94c81ae9fbe956c5ad,
+    type: 3}
+  m_PrefabInstance: {fileID: 5014359945785376556}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1852103423 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7603166256691129119, guid: 05239de7459f4724483a8b51d51ff761,
@@ -2013,7 +2099,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 927771151, guid: 797ac2e2d8fac0249ab79436690fe2b9, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1230027386, guid: 797ac2e2d8fac0249ab79436690fe2b9, type: 3}
       propertyPath: healthBar
