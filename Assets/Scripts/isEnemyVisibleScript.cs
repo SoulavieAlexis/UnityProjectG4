@@ -23,7 +23,6 @@ public class isEnemyVisibleScript : MonoBehaviour
         else
         {
             GetComponent<BoxCollider2D>().enabled = false;
-            Debug.Log(GetComponent<HealthScript>().hp);
         }
         
         

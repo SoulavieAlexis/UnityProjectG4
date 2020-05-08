@@ -33,7 +33,6 @@ public class EnemyMoveScript : MonoBehaviour
         if (starShipPositionX <= -28.7 || starShipPositionX >= 24)
         {
             // 2 - Movement
-            Debug.Log(starShipPositionX);
             direction.x = -direction.x;
 
             movement = new Vector2(
