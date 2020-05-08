@@ -17,7 +17,7 @@ public class isEnemyVisibleScript : MonoBehaviour
     {
         if (m_Renderer.isVisible)
         {
-            GetComponent<HealthScript>().isEnemy = true; 
+            GetComponent<HealthScript>().isEnemy = true;
             Debug.Log(GetComponent<HealthScript>().isEnemy);
         }
         else

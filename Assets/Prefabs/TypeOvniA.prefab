@@ -46,7 +46,7 @@ MonoBehaviour:
   shotPrefab: {fileID: 2561681361897691540, guid: 8f40c497efff42c4cadaf29b3438fc06,
     type: 3}
   shootingRate: 0.75
-  shootCooldown: 5
+  shootCooldown: 1
 --- !u!1 &3739883264133608992
 GameObject:
   m_ObjectHideFlags: 0
@@ -78,7 +78,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3739883264133608992}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.64732647, y: 5.5904064, z: 0}
+  m_LocalPosition: {x: 0.64732647, y: -120, z: 15}
   m_LocalScale: {x: 1.953813, y: 1.7860849, z: 2.4968846}
   m_Children:
   - {fileID: 4004718479586216631}

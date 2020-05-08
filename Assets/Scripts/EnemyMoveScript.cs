@@ -30,10 +30,10 @@ public class EnemyMoveScript : MonoBehaviour
     {
         starShipPositionX = this.transform.position.x;
         
-        if (starShipPositionX <= 5 || starShipPositionX >= 15)
+        if (starShipPositionX <= -28.7 || starShipPositionX >= 24)
         {
             // 2 - Movement
-
+            Debug.Log(starShipPositionX);
             direction.x = -direction.x;
 
             movement = new Vector2(
