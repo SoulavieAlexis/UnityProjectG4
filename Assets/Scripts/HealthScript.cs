@@ -39,8 +39,6 @@ public class HealthScript : MonoBehaviour
 
                 if (hp <= 0)
                 {
-                    //Ajout de 50 points au score
-                    ScoreScript.instance.addPoints(50);
                     // Destruction !
                     Destroy(gameObject);
                 }
@@ -49,7 +47,6 @@ public class HealthScript : MonoBehaviour
         // Si Le joueur touche un ennemi, cet ennemi est détruit
         if (player != null)
         {
-            ScoreScript.instance.addPoints(50);
             Destroy(gameObject);
         }
 
@@ -60,7 +57,6 @@ public class HealthScript : MonoBehaviour
 
             if (hp <= 0)
             {
-                ScoreScript.instance.addPoints(50);
                 Destroy(gameObject);
             }
         }
@@ -69,7 +65,6 @@ public class HealthScript : MonoBehaviour
     public void damageLaser(int damage){
         hp = hp - damage;
         if(hp <= 0){
-            ScoreScript.instance.addPoints(50);
             Destroy(this.gameObject);
         }
     }
