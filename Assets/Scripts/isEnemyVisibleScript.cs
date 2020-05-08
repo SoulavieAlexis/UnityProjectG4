@@ -17,13 +17,13 @@ public class isEnemyVisibleScript : MonoBehaviour
     {
         if (m_Renderer.isVisible)
         {
-            GetComponent<HealthScript>().isEnemy = true;
-            Debug.Log(GetComponent<HealthScript>().isEnemy);
+            GetComponent<BoxCollider2D>().enabled = true;
+            
         }
         else
         {
-            GetComponent<HealthScript>().isEnemy = false;
-            Debug.Log(GetComponent<HealthScript>().isEnemy);
+            GetComponent<BoxCollider2D>().enabled = false;
+            Debug.Log(GetComponent<HealthScript>().hp);
         }
         
         

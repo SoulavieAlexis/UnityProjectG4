@@ -24,13 +24,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2589080349182588155}
-  m_LocalRotation: {x: 0, y: -0, z: 0.9961947, w: -0.08715578}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 1.5, y: -1.6, z: 0}
   m_LocalScale: {x: 5, y: 5, z: 1}
   m_Children: []
   m_Father: {fileID: 3922685069057330863}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 190}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2459416429558168997
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -43,10 +43,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b7d0e91a0dbc4444e941d8b3e392be1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shotPrefab: {fileID: 5166452117605676326, guid: ba3702a755a688c4eb7eef742054a7a9,
+  shotPrefab: {fileID: 4094960151861465500, guid: 8c9a1a7460e4e0a418765eb0961eb082,
     type: 3}
-  shootingRate: 1.5
-  shootCooldown: 0.75
+  shootingRate: 3
+  shootCooldown: 1.5
 --- !u!1 &3784540587399203335
 GameObject:
   m_ObjectHideFlags: 0
@@ -92,7 +92,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   shotPrefab: {fileID: 5166452117605676326, guid: ba3702a755a688c4eb7eef742054a7a9,
     type: 3}
-  shootingRate: 1.5
+  shootingRate: 3
   shootCooldown: 0
 --- !u!1 &3922685069057330860
 GameObject:
@@ -242,7 +242,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f3ab2ba7ee12204449b0d011f795316e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hp: 100
+  hp: 20
   isEnemy: 1
 --- !u!114 &3922685069057330865
 MonoBehaviour:

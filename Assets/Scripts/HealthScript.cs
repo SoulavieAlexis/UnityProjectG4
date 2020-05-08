@@ -49,17 +49,6 @@ public class HealthScript : MonoBehaviour
         {
             Destroy(gameObject);
         }
-
-        // Si le joueur touche un ennemi il perd 2 hp
-        if (enemy != null && this.isEnemy == false)
-        {
-            hp -= 2;
-
-            if (hp <= 0)
-            {
-                Destroy(gameObject);
-            }
-        }
     }
 // DEgats du laser
     public void damageLaser(int damage){

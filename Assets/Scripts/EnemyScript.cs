@@ -8,21 +8,26 @@ using UnityEngine;
 public class EnemyScript : MonoBehaviour
 {
     private WeaponScript[] weapons;
+    private Renderer m_Renderer;
 
     void Awake()
     {
         // Récupération de toutes les armes de l'ennemi
         weapons = GetComponentsInChildren<WeaponScript>();
+        m_Renderer = GetComponent<Renderer>();
     }
 
     void Update()
     {
-        foreach (WeaponScript weapon in weapons)
+        if (m_Renderer.isVisible)
         {
-            // On fait tirer toutes les armes automatiquement
-            if (weapon != null && weapon.CanAttack)
+            foreach (WeaponScript weapon in weapons)
             {
-                weapon.Attack(true);
+                // On fait tirer toutes les armes automatiquement
+                if (weapon != null && weapon.CanAttack)
+                {
+                    weapon.Attack(true);
+                }
             }
         }
     }
