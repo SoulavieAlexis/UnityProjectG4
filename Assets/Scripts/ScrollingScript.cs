@@ -13,7 +13,7 @@ public class ScrollingScript : MonoBehaviour
   /// <summary>
   /// Direction du défilement
   /// </summary>
-  public Vector2 direction = new Vector2(0, 1);
+  public Vector2 direction = new Vector2(-1, 0);
 
   /// <summary>
   /// Appliquer le mouvement de scrolling à la caméra ?
