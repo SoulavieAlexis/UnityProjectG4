@@ -1001,7 +1001,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: {x: 2, y: 2}
-  direction: {x: -1, y: 0}
+  direction: {x: 1, y: -1}
   isLinkedToCamera: 1
 --- !u!1001 &817999505
 PrefabInstance:
@@ -1312,7 +1312,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: {x: 2, y: 2}
-  direction: {x: -1, y: 0}
+  direction: {x: 0, y: -1}
   isLinkedToCamera: 1
 --- !u!1001 &1081205419
 PrefabInstance:
@@ -1439,7 +1439,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: {x: 2, y: 2}
-  direction: {x: 1, y: -1}
+  direction: {x: -1, y: 0}
   isLinkedToCamera: 1
 --- !u!1001 &1261811673
 PrefabInstance:
@@ -2641,6 +2641,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2141336682}
     m_Modifications:
+    - target: {fileID: 4867841408206008601, guid: 051dc9cb15812334f8e1c26858743b75,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 4867841408206008606, guid: 051dc9cb15812334f8e1c26858743b75,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2719,6 +2724,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_SortingLayer
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4873824991892509623, guid: 09628c1d54f9ad040b57ac5f593c8339,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4873824991892509624, guid: 09628c1d54f9ad040b57ac5f593c8339,
         type: 3}
