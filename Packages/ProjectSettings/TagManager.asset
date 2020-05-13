@@ -45,6 +45,24 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Background
+    uniqueID: 2277095123
+    locked: 0
+  - name: Enemies
+    uniqueID: 366742313
+    locked: 0
+  - name: Bullets
+    uniqueID: 1224933861
+    locked: 0
+  - name: Player
+    uniqueID: 3328881849
+    locked: 0
+  - name: Item
+    uniqueID: 3120028683
+    locked: 0
   - name: Plateforms
-    uniqueID: 3512805371
+    uniqueID: 4267207901
+    locked: 0
+  - name: triguer
+    uniqueID: 2392581305
     locked: 0

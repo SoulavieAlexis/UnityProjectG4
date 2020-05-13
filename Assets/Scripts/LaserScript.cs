@@ -22,7 +22,7 @@ public class LaserScript : MonoBehaviour{
         RaycastHit2D rayonLaser = Physics2D.Raycast(transform.position, transform.up, tailleLaser);
         if(healthPlayer.powerLaser == true)
         {
-            powerTime = 500;
+            powerTime = 150;
             healthPlayer.powerLaser = false;
         }
         if(Input.GetButton("Fire1") && powerTime > 0){
