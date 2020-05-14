@@ -45,8 +45,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   shotPrefab: {fileID: 4094960151861465500, guid: 8c9a1a7460e4e0a418765eb0961eb082,
     type: 3}
-  shootingRate: 3
-  shootCooldown: 1.5
+  shootingRate: 5
+  shootCooldown: 2.5
 --- !u!1 &3784540587399203335
 GameObject:
   m_ObjectHideFlags: 0
@@ -92,7 +92,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   shotPrefab: {fileID: 5166452117605676326, guid: ba3702a755a688c4eb7eef742054a7a9,
     type: 3}
-  shootingRate: 3
+  shootingRate: 5
   shootCooldown: 0
 --- !u!1 &3922685069057330860
 GameObject:
