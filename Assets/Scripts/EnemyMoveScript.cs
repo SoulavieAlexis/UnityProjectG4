@@ -30,7 +30,7 @@ public class EnemyMoveScript : MonoBehaviour
     {
         starShipPositionX = this.transform.position.x;
         
-        if (starShipPositionX <= -28.7 || starShipPositionX >= 24)
+        if (starShipPositionX <= -40 || starShipPositionX >= 35)
         {
             // 2 - Movement
             direction.x = -direction.x;
