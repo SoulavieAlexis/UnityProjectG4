@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class ScoreScript : MonoBehaviour
 {
-    public int score;
+    public int scorePlayer;
     public Text pointsCountText;
 
     public static ScoreScript instance;
@@ -22,7 +22,7 @@ public class ScoreScript : MonoBehaviour
 
     public void addPoints(int points)
     {
-        score += points;
-        pointsCountText.text = score.ToString();
+        scorePlayer += points;
+        pointsCountText.text = scorePlayer.ToString();
     }
 }
