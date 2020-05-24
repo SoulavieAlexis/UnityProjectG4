@@ -2,14 +2,9 @@
 
 public class PickUpObjectScript : MonoBehaviour{
     //Type d'objet
-    public bool isLaser;
-    public bool isLife;
+    public bool isLaser = false;
+    public bool isLife = false;
 
-    private void Start()
-    {
-        isLaser = false;
-        isLife = false;
-    }
     private void OnTriggerEnter2D(Collider2D collision){
         if(collision.CompareTag("Player")){
             if (gameObject.CompareTag("laserItem"))

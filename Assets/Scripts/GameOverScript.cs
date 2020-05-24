@@ -58,7 +58,7 @@ public class GameOverScript : MonoBehaviour
         )
         {
             // Retourne au menu
-            Application.LoadLevel("Menu");
+            Application.LoadLevel("MainMenu");
         }
     }
 }

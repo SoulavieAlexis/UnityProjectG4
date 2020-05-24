@@ -93,7 +93,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   monLinerRender: {fileID: 790757422}
   healthPlayer: {fileID: 1230027386}
-  tailleLaser: 20
+  tailleLaser: 50
 --- !u!120 &790757422
 LineRenderer:
   m_ObjectHideFlags: 0
