@@ -14,7 +14,6 @@ public class GameOverScript : MonoBehaviour
     void Start()
     {
         m_scene = SceneManager.GetActiveScene();
-        //currentScore = GetComponent<ScoreScript>().scorePlayer;
     }
 
     void OnGUI()
@@ -24,10 +23,11 @@ public class GameOverScript : MonoBehaviour
 
 
         //GUI.Label(new Rect(10, 10, 100, 20), currentScore.ToString());
+        GUI.Label(new Rect(10, 10, 100, 20), ScoreScript.instance.scorePlayer.ToString());
 
         if (
           GUI.Button(
-            // Centré en x, 1/3 en y
+            // Centré en x, 1/3 en ys
             new Rect(
               Screen.width / 2 - (buttonWidth / 2),
               (1 * Screen.height / 3) - (buttonHeight / 2),
